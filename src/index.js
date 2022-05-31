@@ -1,7 +1,7 @@
-import sliderOne from './modules/slider';
-import sliderTwo from './modules/badScript';
-import burger from './modules/burger';
+import scroll from './modules/scroll';
+import timer from './modules/timer';
+import slider from './modules/slider';
 
-sliderOne();
-sliderTwo();
-burger();
+scroll();
+timer('03 june 2022');
+slider();

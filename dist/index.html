@@ -1,15 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./js/main.js" defer></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Webpack</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js" defer></script>
+    <title>Медиа-студия Пазюков && Company</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Сборка webpack версия 1.0</h1>
+    <section class="header">
+        <div class="container header-content">
+            <div class="header-logo">
+                <a href="#" class="header-logo-link">Пазюков && Comp</a>
+            </div>
+            <ul class="header-menu">
+                <li class="header-item"><a href="" class="header-link-home">Домой</a></li>
+                <li class="header-item"><a href="#about" class="header-link">О нас</a></li>
+                <li class="header-item"><a href="#specialisation" class="header-link">Услуги</a></li>
+                <li class="header-item"><a href="#projects" class="header-link">Проекты</a></li>
+                <li class="header-item"><a href="#" class="header-link-price">Прайс</a></li>
+                <li class="header-item"><a href="#reviews" class="header-link">Отзывы</a></li>
+            </ul>
+            <div class="header-contact">
+                <a href="#" class="btn-contact">Свяжитесь с нами</a>
+            </div>
+        </div>
+        <div class="container title-bg">
+            <div class="title-header">
+                Медиа-студия Пазюков && Comp<br> мы создаем креативы
+            </div>
+            <p class="title-description">
+                Оставьте заявку сейчас и получите скидку 10%!*
+            </p>
+            <p class="title-action">До конца акции осталось</p>
+            <div class="timer-numbers" id="timer">
+                <span id="timer-hours" class="timer-hour">00</span>
+                <span>:</span>
+                <span id="timer-minutes" class="timer-minutes">00</span>
+                <span>:</span>
+                <span id="timer-seconds" class=timer-seconds">00</span>
+            </div>
+
+            <form id="form1" name="user_form" class="main-form">
+                <div class="main-form-wrap">
+                    <div class="input-wrap">
+                        <div class="main-form-input">
+                            <div class="input-block">
+                                <input type="text" class="form-name" id="form1-name" name="user_name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="input-block">
+                                <input type="email" class="form-email" id="form1-email" name="user_email" placeholder="E-mail">
+                            </div>
+                            <div class="input-block">
+                                <input type="tel" class="form-phone" id="form1-phone" name="user_phone" placeholder="Номер телефона" required>
+                            </div>
+                        </div>
+                        <div class="btn-block">
+                            <a href="#" class="btn-contact">Оставить заявку!</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+            <p class="title-garant">*Мы гарантируем конфидициальность передаваемых данных</p>
+        </div>
+    </section>
+
+    <section class="specialisation" id="specialisation">
+        <div class="container">
+            <h2 class="specialisation-title">Наша задача помочь<br> реализовать Ваши идеи</h2>
+            <div class="specialisation-items">
+                <div class="specialisation-item">
+                    <div class="specialisation-item-logo">
+                        <img src="img/brand.png" alt="logo">
+                    </div>
+                    <div class="specialisation-item-title">Branding</div>
+                    <div class="specialisation-item-description">
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </div>
+                    <div class="specialisation-item-link">
+                        <a href="#" class="link-more">Read More</a>
+                        <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                    </div>
+                </div>
+                <div class="specialisation-item">
+                    <div class="specialisation-item-logo">
+                        <img src="img/mobile.png" alt="logo">
+                    </div>
+                    <div class="specialisation-item-title">Mobile Apps</div>
+                    <div class="specialisation-item-description">
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </div>
+                    <div class="specialisation-item-link">
+                        <a href="#" class="link-more">Read More</a>
+                        <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                    </div>
+                </div>
+                <div class="specialisation-item">
+                    <div class="specialisation-item-logo">
+                        <img src="img/commerce.png" alt="logo">
+                    </div>
+                    <div class="specialisation-item-title">E-commerce</div>
+                    <div class="specialisation-item-description">
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </div>
+                    <div class="specialisation-item-link">
+                        <a href="#" class="link-more">Read More</a>
+                        <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                    </div>
+                </div>
+                <div class="specialisation-item">
+                    <div class="specialisation-item-logo">
+                        <img src="img/human.png" alt="logo">
+                    </div>
+                    <div class="specialisation-item-title">Human Resources</div>
+                    <div class="specialisation-item-description">
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </div>
+                    <div class="specialisation-item-link">
+                        <a href="#" class="link-more">Read More</a>
+                        <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                    </div>
+                </div>
+                <div class="specialisation-item">
+                    <div class="specialisation-item-logo">
+                        <img src="img/management.png" alt="logo">
+                    </div>
+                    <div class="specialisation-item-title">Learning Management</div>
+                    <div class="specialisation-item-description">
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </div>
+                    <div class="specialisation-item-link">
+                        <a href="#" class="link-more">Read More</a>
+                        <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                    </div>
+                </div>
+                <div class="specialisation-item">
+                    <div class="specialisation-item-logo">
+                        <img src="img/brand.png" alt="logo">
+                    </div>
+                    <div class="specialisation-item-title">UI/UX Design</div>
+                    <div class="specialisation-item-description">
+                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </div>
+                    <div class="specialisation-item-link">
+                        <a href="#" class="link-more">Read More</a>
+                        <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects-title-wrap">
+                <h2 class="projects-title">Наши проекты</h2>
+                <div class="projects-link">
+                    <a href="#" class="link-more">View All</a>
+                    <img src="img/arrow.png" alt="arrow" class="link-arrow">
+                </div>
+            </div>
+            <div class="projects-items">
+                <div class="projects-item"></div>
+                <div class="projects-item"></div>
+                <div class="projects-item"></div>
+                <div class="projects-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about-title">
+                О компании <br>
+                Пазюков && Comp
+            </h2>
+            <div class="about-items">
+                <div class="about-item">
+                    <div class="about-item-logo">
+                        <img src="img/10+.png" alt="logo">
+                    </div>
+                    <div class="about-item-description">
+                        <p class="about-item-subtitle">С 2022 года</p>
+                        <p class="about-item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo
+                            exercitationem laboriosam corporis velit.</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-item-logo">
+                        <img src="img/vector.png" alt="logo">
+                    </div>
+                    <div class="about-item-description">
+                        <p class="about-item-subtitle">Гарантия качества</p>
+                        <p class="about-item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo
+                            exercitationem laboriosam corporis velit.</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-item-logo">
+                        <img src="img/subway_world.png" alt="logo">
+                    </div>
+                    <div class="about-item-description">
+                        <p class="about-item-subtitle">Наша деятельность</p>
+                        <p class="about-item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo
+                            exercitationem laboriosam corporis velit.</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-item-logo">
+                        <img src="img/payment.png" alt="logo">
+                    </div>
+                    <div class="about-item-description">
+                        <p class="about-item-subtitle">Безопасность платежа</p>
+                        <p class="about-item-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo
+                            exercitationem laboriosam corporis velit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2 class="team-title">Наша команда</h2>
+            <div class="team-people">
+
+                <div class="team-card-left">
+                    <div class="team-card-left-top">
+                        <div class="team-card-txt-left">
+                            <div class="human">Евгений Пазюков</div>
+                            <div class="human-description">Основатель, главный видеограф, фотограф по-совместительству и
+                                просто клевый парень</div>
+                        </div>
+                        <div class="team-card-avatar">
+                            <img class="photo-top-left" src="img/photo.jpg" alt="photo">
+                        </div>
+                    </div>
+
+                    <div class="team-card-left-bottom">
+                        <div class="team-card-txt-left team-card-txt-bottom">
+                            <div class="human">Евгений Пазюков</div>
+                            <div class="human-description">Основатель, главный видеограф, фотограф по-совместительству и
+                                просто клевый парень</div>
+                        </div>
+                        <div class="team-card-avatar">
+                            <img class="photo-bottom-left" src="img/photo.jpg" alt="photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card-right">
+                    <div class="team-card-right-top">
+                        <div class="team-card-txt-right">
+                            <div class="human">Евгений Пазюков</div>
+                            <div class="human-description">Основатель, главный видеограф, фотограф по-совместительству и
+                                просто клевый парень</div>
+                        </div>
+                        <div class="team-card-avatar">
+                            <img class="photo-top-right" src="img/photo_1.jpg" alt="photo">
+                        </div>
+                    </div>
+
+                    <div class="team-card-right-bottom">
+                        <div class="team-card-txt-right team-card-txt-bottom">
+                            <div class="human">Евгений Пазюков</div>
+                            <div class="human-description">Основатель, главный видеограф, фотограф по-совместительству и
+                                просто клевый парень</div>
+                        </div>
+                        <div class="team-card-avatar">
+                            <img class="photo-bottom-right" src="img/photo_1.jpg" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews-wrap">
+                <div class="reviews-left">
+                    <div class="reviews-title">Наши клиенты говорят</div>
+                    <div class="reviews-txt">Отзывы наших довольных клиентов помогают нам <br> достичь вершин</div>
+                </div>
+                <div class="reviews-right">
+                    <img class="brackets" src="img/brakets.png" alt="brackets">
+                    <ul class="reviews-slider">
+                            <li class="reviews-item reviews-item-active">
+                                <div class="author-review">
+                                    <img src="img/man-review.png" alt="man" class="photo-review">
+                                    <div class="person-review">
+                                        <div class="name-review">Mr. Jackson</div>
+                                        <div class="who-is-review">CEO of ABD Group</div>
+                                    </div>
+                                </div>
+                                <div class="feedback">
+                                    В рамках спецификации современных стандартов, ключевые особенности структуры проекта представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть ассоциативно распределены по отраслям. Идейные соображения высшего порядка, а также экономическая повестка сегодняшнего дня создаёт предпосылки для экспериментов.
+                                </div>
+                            </li>
+                            <li class="reviews-item">
+                                <div class="author-review">
+                                    <img src="img/man-review.png" alt="man" class="photo-review">
+                                    <div class="person-review">
+                                        <div class="name-review">Mr. Poppins</div>
+                                        <div class="who-is-review">CEO of ABD Group</div>
+                                    </div>
+                                </div>
+                                <div class="feedback">
+                                    Повседневная практика показывает, что синтетическое тестирование играет важную роль в формировании анализа существующих паттернов поведения. Банальные, но неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены. Кстати, предприниматели в сети интернет.
+                                </div>
+                            </li>
+                            <li class="reviews-item">
+                                <div class="author-review">
+                                    <img src="img/man-review.png" alt="man" class="photo-review">
+                                    <div class="person-review">
+                                        <div class="name-review">Mr. Freeman</div>
+                                        <div class="who-is-review">CEO of ABD Group</div>
+                                    </div>
+                                </div>
+                                <div class="feedback">
+                                    Разнообразный и богатый опыт говорит нам, что перспективное планирование говорит о возможностях кластеризации усилий. Противоположная точка зрения подразумевает, что ключевые особенности структуры проекта будут превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Кстати, базовые сценарии поведения пользователей освещают.
+                                </div>
+                            </li>
+                        <ul class="reviews-slider-ellipse"></ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grow" id="grow">
+        <div class="container">
+            <div class="grow-title">Развивайте свой бизнес с помощью<br> Пазюков && Comp</div>
+            <div class="grow-contact">
+                <a href="#" class="btn-contact">Свяжитесь с нами</a>
+            </div>
+            <div class="grow-info">
+                <div class="grow-item">
+                    <div class="grow-count">100+</div>
+                    <div class="grow-txt">Happy Customer</div>
+                </div>
+                <div class="grow-item">
+                    <div class="grow-count">100+</div>
+                    <div class="grow-txt">Project Completed</div>
+                </div>
+                <div class="grow-item">
+                    <div class="grow-count">100+</div>
+                    <div class="grow-txt">Awards Won</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-items">
+                <div class="footer-item">
+                    <div class="footer-logo">SakaAgency</div>
+                    <div class="footer-txt">
+                        Copyright © 2022 SakaAgency<br>
+                        All Right Reserver
+                    </div>
+                    <div class="footer-media">
+                        <a href="#" class="footer-media-link" target="_blank"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+                        <a href="#" class="footer-media-link" target="_blank"><img src="img/twitter.png" alt="twitter" class="twitter"></a>
+                        <a href="#" class="footer-media-link" target="_blank"><img src="img/youtube.png" alt="youtube" class="youtube"></a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-header">Company</div>
+                    <ul class="footer-list">
+                        <li class="footer-point"><a href="#" class="footer-link">About Us</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">Project</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">Pricing</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">Career</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-header">Support</div>
+                    <ul class="footer-list">
+                        <li class="footer-point"><a href="#" class="footer-link">FAQ</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">Term and Conditions</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">halo@sakaagency.studio</a></li>
+                        <li class="footer-point"><a href="#" class="footer-link">022-123-4567</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-header">Get In Touch</div>
+                    <form action="" class="footer-subscribe">
+                        <input type="email" name="email" id="" placeholder="Your email address" class="footer-email">
+                        <input type="submit" value="Отправить" name="send" class="sendsubmit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
