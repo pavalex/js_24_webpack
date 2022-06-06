@@ -64,17 +64,21 @@ body {
 .header-menu {
     z-index: 3;
     list-style-type: none;
-    width: 600px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-link,
 .header-link-home,
 .header-link-price {
+    display: block;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
     transition: all .3s;
 }
 
@@ -110,6 +114,93 @@ body {
     font-weight: bold;
     z-index: 3;
 }
+
+.phone-media {
+    width: 300px;
+    height: 50px;
+    z-index: 3;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.media-object {
+    margin-right: 10px;
+}
+
+.media-body {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.media-body small {
+    font-size: 14px;
+}
+
+.phone-media .phone {
+    font-weight: 400;
+    font-size: 20px;
+}
+/*menu*/
+menu {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: #000;
+    opacity: .9;
+    left: 0;
+    margin: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.menu-burger {
+    text-align: center;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menu-burger img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.menu-burger small {
+    margin-top: 7px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.close-btn {
+    text-decoration: none;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 50px;
+    transition: .2s;
+    transform-origin: 50% 53%;
+    display: block;
+    text-align: center;
+    color: #19b5fe;
+}
+
+.active-menu {
+    transition: 1s;
+    transform: translateX(100%);
+}
+
+
 
 /* title */
 .title-header {
@@ -551,11 +642,11 @@ body {
     transition: opacity .5s;
 }
 
-.portfolio-btn.prev {
-    left: 20px;
-    background-image: url(/img/icons/left-arrow.svg);
-    background-position: 25% 50%;
-}
+/*.portfolio-btn.prev {*/
+/*    left: 20px;*/
+/*    background-image: url(/img/icons/left-arrow.svg);*/
+/*    background-position: 25% 50%;*/
+/*}*/
 
 .dot {
     cursor: pointer;

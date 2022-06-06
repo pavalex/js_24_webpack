@@ -1,7 +1,9 @@
 import scroll from './modules/scroll';
 import timer from './modules/timer';
 import slider from './modules/slider';
+import menu from "./modules/menu";
 
 scroll();
-timer('03 june 2022');
+timer('20 june 2022');
 slider();
+menu();
