@@ -158,7 +158,6 @@ menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
@@ -205,7 +204,6 @@ menu {
 /* title */
 .title-header {
     position: relative;
-    /*max-width: 670px;*/
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -303,7 +301,7 @@ menu {
     width: 230px;
     height: 50px;
     margin: 40px auto;
-    background: #4080BF;
+    background: #19b5fe;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -311,6 +309,7 @@ menu {
     cursor: pointer;
     z-index: 3;
     transition: all .3s;
+    border: none;
 }
 
 .input-block {
@@ -328,7 +327,7 @@ menu {
 
 /* specialisation */
 .specialisation {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -337,7 +336,86 @@ menu {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 020px;
+}
+
+.specialisation .underline {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #19b5fe;
+    width: 400px;
+    margin: 0 auto 40px;
+}
+
+.specialisation-service {
+    border: 1px solid #19b5fe;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.specialisation-service-tab {
+    flex-grow: 1;
+    height: auto;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 400;
+    color: #19b5fe;
+    font-size: 18px;
+    text-align: center;
+}
+
+.specialisation-service-tab.active {
+    background-color: #19b5fe;
+    border-radius: 3rem;
+    color: #fff;
+}
+
+.service-tab {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-tab-img {
+    width: 50%;
+}
+
+.service-tab-img img {
+    max-width: 100%;
+}
+
+.service-tab-reverse {
+    flex-direction: row-reverse;
+}
+
+.service-tab-d-none {
+    display: none;
+}
+
+.service-inner {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.service-inner-reverse {
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+.service-text {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.btn-service {
+    color: #fff;
+    margin: 30px 0 0;
 }
 
 .specialisation-items {
