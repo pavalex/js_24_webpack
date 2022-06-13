@@ -1,4 +1,4 @@
-const timer = (deadline) => {
+export const timer = (deadline) => {
     const timerHours = document.getElementById('timer-hours');
     const timerMinutes = document.getElementById('timer-minutes');
     const timerSeconds = document.getElementById('timer-seconds');
@@ -51,5 +51,3 @@ const timer = (deadline) => {
 
     updateClock();
 };
-
-export default timer;

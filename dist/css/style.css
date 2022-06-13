@@ -23,7 +23,7 @@ body {
     height: 800px;
     /*min-height: 100vh;*/
     position: relative;
-    background: url(../img/pexels-marc.png);
+    background: url(../img/bg/pexels-marc.png) fixed;
     background-size: cover;
 }
 
@@ -85,7 +85,7 @@ body {
 .header-link:hover,
 .header-link-home:hover,
 .header-link-price:hover {
-    color: yellow;
+    color: #19b5fe;
 }
 
 .header-contact {
@@ -342,15 +342,15 @@ menu {
 .specialisation .underline {
     display: block;
     text-align: center;
-    border-bottom: 1px solid #19b5fe;
+    border-bottom: 1px solid #fff;
     width: 400px;
     margin: 0 auto 40px;
 }
 
 .specialisation-service {
     border: 1px solid #19b5fe;
-    border-radius: 3rem;
-    margin-bottom: 3rem;
+    border-radius: 30px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -372,7 +372,7 @@ menu {
 
 .specialisation-service-tab.active {
     background-color: #19b5fe;
-    border-radius: 3rem;
+    border-radius: 30px;
     color: #fff;
 }
 
@@ -486,16 +486,33 @@ menu {
 }
 
 .projects-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    margin-bottom: 20px;
 }
 
-.projects-item {
-    height: 300px;
+.projects-item img {
+    max-width: 350px;
     border-radius: 10px;
-    background: #4c4f5a;
+}
+
+.projects-arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-right,
+.arrow-left {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+    margin-right: 20px;
+}
+
+.arrow-right {
+    margin-left: 20px;
 }
 
 /* about */
@@ -657,7 +674,7 @@ menu {
 /* reviews */
 .reviews {
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .reviews-wrap {
@@ -720,12 +737,6 @@ menu {
     transition: opacity .5s;
 }
 
-/*.portfolio-btn.prev {*/
-/*    left: 20px;*/
-/*    background-image: url(/img/icons/left-arrow.svg);*/
-/*    background-position: 25% 50%;*/
-/*}*/
-
 .dot {
     cursor: pointer;
     height: 16px;
@@ -777,6 +788,113 @@ menu {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+/*connect*/
+.connect {
+    background: #4c4f5a url(../img/bg/connect-bg.jpg) fixed center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.connect-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.connect .underline {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width: 500px;
+    margin: 0 auto 20px;
+}
+
+.connect-description {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.connect-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect-form {
+    width: 65%;
+}
+
+.connect-contacts {
+    width: 35%;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.connect-contacts p {
+    font-size: 16px;
+}
+
+.connect-form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-form-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.connect-form-top label {
+    width: 230px;
+}
+
+.connect-message {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    color: #000;
+    outline: none;
+    resize: none;
+}
+
+.connect-form-top input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    padding-left: 10px;
+    color: #000;
+    outline: none;
+}
+
+.btn-connect {
+    color: #fff;
+    margin: 20px auto 0;
+    font-size: 18px;
+}
+
+.connect-address {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.connect-address img {
+    width: 25px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 10px;
 }
 
 /* grow */
@@ -897,7 +1015,7 @@ menu {
 .footer-email {
     width: 100%;
     height: 100%;
-    border: 0px;    
+    border: 0;
     background: #4c4f5a;
     padding-left: 10px;
     border-radius: 5px;
@@ -924,32 +1042,57 @@ select:focus {
     background: transparent url('../img/send.png') no-repeat center top;
     text-indent: -1000em;
     cursor: pointer;
-    cursor: hand;
     position: absolute;
     top: 12px;
     right: 10px;
 }
 
+.up {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    z-index: 300;
+    border: 2px solid #4080BF;
+    border-radius: 50%;
+    padding: 0 2px;
+    cursor: pointer;
+    background-color: #4c4f5a;
+}
+
+.up img {
+    width: 30px;
+    height: 30px;
+}
+
 /* adaptiv */
-@media (min-width: 575.98px){
+@media (min-width: 576px){
     .container {
       max-width: 540px;
     }
   }
   
-  @media (min-width: 767.98px){
+  @media (min-width: 768px){
     .container {
       max-width: 720px;	
     }
   }
   
-  @media (min-width: 991.98px) {
+  @media (min-width: 992px) {
     .container {
       max-width: 960px;
     }
+      .projects-item img {
+          max-width: 300px;
+          border-radius: 10px;
+      }
   }
   
-  @media (min-width: 1199.98px){
+  @media (min-width: 1200px){
     .container {
       max-width: 1140px;
     }
@@ -957,4 +1100,9 @@ select:focus {
     .title-header {
         font-size: 40px;
     }
+
+      .projects-item img {
+          max-width: 350px;
+          border-radius: 10px;
+      }
   }

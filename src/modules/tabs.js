@@ -1,4 +1,4 @@
-const tabs = () => {
+export const tabs = () => {
     const tabPanel = document.querySelector('.specialisation-service');
     const tabs = document.querySelectorAll('.specialisation-service-tab');
     const tabContent = document.querySelectorAll('.service-tab');
@@ -18,5 +18,3 @@ const tabs = () => {
         }
     });
 };
-
-export default  tabs;

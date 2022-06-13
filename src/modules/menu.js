@@ -1,4 +1,4 @@
-const menu = () => {
+export const menu = () => {
     const menu = document.querySelector('menu');
     const menuItems = document.querySelectorAll('.header-menu>.header-item>a');
 
@@ -31,5 +31,3 @@ const menu = () => {
         })
     }
 };
-
-export default menu;

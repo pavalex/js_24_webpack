@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/main.js" defer></script>
     <title>Медиа-студия Пазюков && Company</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,7 +87,7 @@
             <li class="header-item"><a href="#projects" class="header-link">Проекты</a></li>
             <li class="header-item"><a href="#" class="header-link-price">Прайс</a></li>
             <li class="header-item"><a href="#reviews" class="header-link">Отзывы</a></li>
-            <li class="header-item"><a href="#reviews" class="header-link">Остались вопросы?</a></li>
+            <li class="header-item"><a href="#connect" class="header-link">Остались вопросы?</a></li>
         </ul>
     </menu>
 
@@ -151,11 +152,26 @@
                     <img src="img/arrow.png" alt="arrow" class="link-arrow">
                 </div>
             </div>
-            <div class="projects-items">
-                <div class="projects-item"></div>
-                <div class="projects-item"></div>
-                <div class="projects-item"></div>
-                <div class="projects-item"></div>
+            <div class="swiper">
+                <div class="projects-items swiper-wrapper">
+                    <div class="projects-item swiper-slide">
+                        <a href="https://cloud.mail.ru/public/R3zV/K8KEo4eTF/Wildberries.mp4" target="_blank"><img src="./img/preview_img/preview-1.png" alt="preview-1"></a>
+                    </div>
+                    <div class="projects-item swiper-slide">
+                        <a href="https://cloud.mail.ru/public/R3zV/K8KEo4eTF/Wildberries.mp4" target="_blank"><img src="./img/preview_img/preview-2.png" alt="preview-2"></a>
+                    </div>
+                    <div class="projects-item swiper-slide">
+                        <a href="https://cloud.mail.ru/public/R3zV/K8KEo4eTF/Wildberries.mp4" target="_blank"><img src="./img/preview_img/preview-3.png" alt="preview-3"></a>
+                    </div>
+                    <div class="projects-item swiper-slide">
+                        <a href="https://cloud.mail.ru/public/R3zV/K8KEo4eTF/Wildberries.mp4" target="_blank"><img src="./img/preview_img/preview-4.png" alt="preview-4"></a>
+                    </div>
+                </div>
+
+                <div class="projects-arrow">
+                    <img class="arrow-left" src="img/svg/right-arrow_1.svg" alt="arrow-left">
+                    <img class="arrow-right" src="img/svg/right-arrow_1.svg" alt="arrow-right">
+                </div>
             </div>
         </div>
     </section>
@@ -320,29 +336,87 @@
         </div>
     </section>
 
-    <section class="grow" id="grow">
+<!--    <section class="grow" id="grow">-->
+<!--        <div class="container">-->
+<!--            <div class="grow-title">Развивайте свой бизнес с помощью<br> Пазюков && Comp</div>-->
+<!--            <div class="grow-contact">-->
+<!--                <a href="#" class="btn-contact">Свяжитесь с нами</a>-->
+<!--            </div>-->
+<!--            <div class="grow-info">-->
+<!--                <div class="grow-item">-->
+<!--                    <div class="grow-count">100+</div>-->
+<!--                    <div class="grow-txt">Happy Customer</div>-->
+<!--                </div>-->
+<!--                <div class="grow-item">-->
+<!--                    <div class="grow-count">100+</div>-->
+<!--                    <div class="grow-txt">Project Completed</div>-->
+<!--                </div>-->
+<!--                <div class="grow-item">-->
+<!--                    <div class="grow-count">100+</div>-->
+<!--                    <div class="grow-txt">Awards Won</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section id="connect" class="connect">
         <div class="container">
-            <div class="grow-title">Развивайте свой бизнес с помощью<br> Пазюков && Comp</div>
-            <div class="grow-contact">
-                <a href="#" class="btn-contact">Свяжитесь с нами</a>
-            </div>
-            <div class="grow-info">
-                <div class="grow-item">
-                    <div class="grow-count">100+</div>
-                    <div class="grow-txt">Happy Customer</div>
-                </div>
-                <div class="grow-item">
-                    <div class="grow-count">100+</div>
-                    <div class="grow-txt">Project Completed</div>
-                </div>
-                <div class="grow-item">
-                    <div class="grow-count">100+</div>
-                    <div class="grow-txt">Awards Won</div>
+            <h2 class="connect-title">Остались вопросы?</h2>
+            <div class="underline"></div>
+            <div class="connect-description">Задайте их в форме ниже и наши специалисты свяжутся с Вами!</div>
+
+            <div class="connect-data">
+                <form id="form2" name="user_form" class="connect-form">
+                    <div class="connect-form-input">
+                        <div class="connect-form-top">
+                            <label for="form2-name">
+                                <input class="top-form" id="form2-name" type="text" name="user_name" placeholder="Ваше имя" required>
+                            </label>
+                            <label for="form2-email">
+                                <input class="top-form form-email" id="form2-email" type="email" name="user_email"
+                                       placeholder="E-mail" required>
+                            </label>
+                            <label for="form2-phone">
+                                <input class="top-form form-phone" id="form2-phone" type="tel" name="user_phone"
+                                       placeholder="Номер телефона" required>
+                            </label>
+                        </div>
+                        <label for="form2-message">
+                            <textarea class="connect-message" id="form2-message" name="user_message"
+                                      placeholder="Ваше сообщение"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn-block btn-connect" type="submit">Оставить заявку!</button>
+                </form>
+
+                <div class="connect-contacts">
+                    <div class="connect-address">
+                        <img src="img/connect/phone.svg" alt="">
+                        <p>+ 7 843 249 00 64</p>
+                    </div>
+                    <div class="connect-address">
+                        <img src="img/connect/whatsapp.svg" alt="">
+                        <p>+ 7 843 249 00 64</p>
+                    </div>
+                    <div class="connect-address">
+                        <img src="img/connect/letter.svg" alt="">
+                        <p>pazukov@mail.ru</p>
+                    </div>
+                    <div class="connect-address">
+                        <img src="img/connect/skype.svg" alt="">
+                        <p>skype: pazukov</p>
+                    </div>
+                    <div class="connect-address">
+                        <img src="img/connect/tele.svg" alt="">
+                        <p>telegram: pazukov</p>
+                    </div>
+                    <p>График работы: с 9-00 до 18-00. Пн.-Пт.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-items">
@@ -388,6 +462,11 @@
             </div>
         </div>
     </footer>
+
+    <div class="up">
+        <img src="img/icons/up-arrow.svg" alt="up">
+    </div>
+
 </body>
 
 </html>

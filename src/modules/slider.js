@@ -1,4 +1,4 @@
-const slider = () => {
+export const slider = () => {
     const sliderBlock = document.querySelector('.reviews-slider');
     const slides = document.querySelectorAll('.reviews-item');
     const reviewsSliderEllipse = document.querySelector('.reviews-slider-ellipse');
@@ -87,5 +87,3 @@ const slider = () => {
 
     startSlide(timeInterval);
 };
-
-export default slider;
