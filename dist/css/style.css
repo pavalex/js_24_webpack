@@ -103,7 +103,8 @@ body {
 
 .header-contact:hover,
 .grow-contact:hover,
-.btn-block:hover {
+.btn-block:hover,
+.popup .popup-btn:hover {
     background: #274b6e;
 }
 
@@ -322,7 +323,7 @@ menu {
     height: 100%;
     border-radius: 25px;
     padding-left: 30px;
-    outline: none;
+    border: none;
 }
 
 /* specialisation */
@@ -874,6 +875,9 @@ menu {
     border: none;
     padding-left: 10px;
     color: #000;
+}
+
+input:focus {
     outline: none;
 }
 
@@ -895,64 +899,6 @@ menu {
     border-radius: 3px;
     padding: 5px;
     margin-right: 10px;
-}
-
-/* grow */
-.grow {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #4c4f5a;
-}
-
-.grow-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.grow-contact {
-    margin: 0 auto;
-    width: 170px;
-    height: 50px;
-    background: #4080BF;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.grow-info {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.grow-item {
-    width: 240px;
-    height: 65px;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.grow-count {
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.grow-txt {
-    font-weight: 400;
-    font-size: 16px;
 }
 
 /* footer */
@@ -1067,6 +1013,85 @@ select:focus {
 .up img {
     width: 30px;
     height: 30px;
+}
+
+/*popup*/
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0,0,0,.5);
+}
+
+.popup .popup-content {
+    position: fixed;
+    text-align: center;
+    width: 400px;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-200px);
+    padding: 20px 60px;
+    background-color: #24241f;
+}
+
+.popup .popup-close {
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    right: 10px;
+    width: 20px;
+    text-align: center;
+    border: none;
+    background: #24241f;
+    font-size: 30px;
+    color: #19b5fe;
+    cursor: pointer;
+}
+
+.popup input {
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 0;
+    margin-top: 15px;
+    padding-left: 15px;
+    border: none;
+}
+
+.popup h3 {
+    font-size: 18px;
+}
+
+.error {
+    outline: solid 2px red;
+}
+
+.error:focus {
+    outline: solid 2px red;
+}
+
+.popup .popup-btn {
+    width: 100%;
+    height: 50px;
+    background: #19b5fe;
+    border-radius: 25px;
+    color: #fff;
+    margin: 20px auto 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    transition: all .3s;
+    border: none;
 }
 
 /* adaptiv */
