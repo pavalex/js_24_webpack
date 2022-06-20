@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/main.js" defer></script>
     <title>Медиа-студия Пазюков && Company</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,78 +19,83 @@
 
 <body>
     <section class="header">
-        <div class="container header-content">
-            <div class="header-logo">
-                <a href="#" class="header-logo-link">Пазюков && Comp</a>
-            </div>
-            <div class="phone-media">
-                <div class="media-left media-middle">
-                    <img class="media-object" src="img/icons/phone.svg" alt="...">
+        <div class="container">
+            <div class="row header-content">
+                <div class="col-md col-sm-2 header-logo">
+                    <a href="#" class="header-logo-link">
+                        <img src="img/videograph.png" alt="videograph">
+                        <span>Пазюков && Comp</span>
+                    </a>
                 </div>
-                <div class="media-body">
-                    <small>Есть вопросы? Звоните!</small>
-                    <p class="phone">8 843 249-00-64</p>
-                </div>
-            </div>
-            <div class="menu-burger">
-                <img src="./img/icons/menu.svg" alt="burger"><br>
-                <small>Меню</small>
-            </div>
-        </div>
-        <div class="container title-bg">
-            <div class="title-header">
-                Медиа-студия Пазюков && Comp<br> мы создаем креативы
-            </div>
-            <p class="title-description">
-                Оставьте заявку сейчас и получите скидку 10%!*
-            </p>
-            <p class="title-action">До конца акции осталось</p>
-            <div class="timer-numbers" id="timer">
-                <span id="timer-hours" class="timer-hour">00</span>
-                <span>:</span>
-                <span id="timer-minutes" class="timer-minutes">00</span>
-                <span>:</span>
-                <span id="timer-seconds" class=timer-seconds">00</span>
-            </div>
-
-            <form id="form1" name="user_form" class="main-form">
-                <div class="main-form-wrap">
-                    <div class="input-wrap">
-                        <div class="main-form-input">
-                            <div class="input-block">
-                                <label for="form1-name">
-                                    <input type="text" class="form-name" id="form1-name" name="user_name" placeholder="Ваше имя" required>
-                                </label>
-                            </div>
-                            <div class="input-block">
-                                <label for="form1-email">
-                                    <input type="email" class="form-email" id="form1-email" name="user_email" placeholder="E-mail" required>
-                                </label>
-                            </div>
-                            <div class="input-block">
-                                <label for="form1-phone">
-                                    <input type="tel" class="form-phone" id="form1-phone" name="user_phone" placeholder="Номер телефона" required>
-                                </label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn-block btn-contact">Оставить заявку!</button>
+                <div class="col-md phone-media">
+                    <div class="media-left media-middle">
+                        <img class="media-object" src="img/icons/phone.svg" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <small>Есть вопросы? Звоните!</small>
+                        <p class="phone">8 843 249-00-64</p>
                     </div>
                 </div>
-            </form>
+                <div class="col-md col-sm-2 menu-burger">
+                    <img src="./img/icons/menu.svg" alt="burger"><br>
+                    <small>Меню</small>
+                </div>
+            </div>
+            <div class="title-bg">
+                <div class="title-header">
+                    Медиа-студия Пазюков && Comp<br> мы создаем креативы
+                </div>
+                <p class="title-description">
+                    Оставьте заявку сейчас и получите скидку 10%!*
+                </p>
+                <p class="title-action">До конца акции осталось</p>
+                <div class="timer-numbers" id="timer">
+                    <span id="timer-hours" class="timer-hour">00</span>
+                    <span>:</span>
+                    <span id="timer-minutes" class="timer-minutes">00</span>
+                    <span>:</span>
+                    <span id="timer-seconds" class=timer-seconds">00</span>
+                </div>
+
+                <form id="form1" name="user_form" class="main-form">
+                    <div class="main-form-wrap">
+                        <div class="input-wrap">
+                            <div class="main-form-input">
+                                <div class="input-block">
+                                    <label for="form1-name">
+                                        <input type="text" class="form-name" id="form1-name" name="user_name" placeholder="Ваше имя" required>
+                                    </label>
+                                </div>
+                                <div class="input-block">
+                                    <label for="form1-email">
+                                        <input type="email" class="form-email" id="form1-email" name="user_email" placeholder="E-mail" required>
+                                    </label>
+                                </div>
+                                <div class="input-block">
+                                    <label for="form1-phone">
+                                        <input type="tel" class="form-phone" id="form1-phone" name="user_phone" placeholder="Номер телефона" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-block btn-contact">Оставить заявку!</button>
+                        </div>
+                    </div>
+                </form>
 
 
-            <p class="title-garant">*Мы гарантируем конфидициальность передаваемых данных</p>
+                <p class="title-garant">*Мы гарантируем конфидициальность передаваемых данных</p>
+            </div>
         </div>
+
     </section>
 
     <menu>
         <a class="close-btn" href="#close">&times;</a>
         <ul class="header-menu">
-            <li class="header-item"><a href="" class="header-link-home">Домой</a></li>
-            <li class="header-item"><a href="#about" class="header-link">Наша команда</a></li>
             <li class="header-item"><a href="#specialisation" class="header-link">Наши услуги</a></li>
-            <li class="header-item"><a href="#projects" class="header-link">Проекты</a></li>
-            <li class="header-item"><a href="#" class="header-link-price">Прайс</a></li>
+            <li class="header-item"><a href="#projects" class="header-link">Наши проекты</a></li>
+            <li class="header-item"><a href="#about" class="header-link">О компании</a></li>
+            <li class="header-item"><a href="#team" class="header-link">Наша команда</a></li>
             <li class="header-item"><a href="#reviews" class="header-link">Отзывы</a></li>
             <li class="header-item"><a href="#connect" class="header-link">Остались вопросы?</a></li>
         </ul>
@@ -97,7 +103,7 @@
 
     <section class="specialisation" id="specialisation">
         <div class="container">
-            <h2 class="specialisation-title">Наши услуги</h2>
+            <h2 class="title">Наши услуги</h2>
             <div class="underline"></div>
 
             <div class="specialisation-service">
@@ -149,13 +155,8 @@
 
     <section class="projects" id="projects">
         <div class="container">
-            <div class="projects-title-wrap">
-                <h2 class="projects-title">Наши проекты</h2>
-                <div class="projects-link">
-                    <a href="#" class="link-more">View All</a>
-                    <img src="img/arrow.png" alt="arrow" class="link-arrow">
-                </div>
-            </div>
+            <h2 class="title">Наши проекты</h2>
+            <div class="underline"></div>
             <div class="swiper">
                 <div class="projects-items swiper-wrapper">
                     <div class="projects-item swiper-slide">
@@ -182,10 +183,8 @@
 
     <section class="about" id="about">
         <div class="container">
-            <h2 class="about-title">
-                О компании <br>
-                Пазюков && Comp
-            </h2>
+            <h2 class="title">О компании</h2>
+            <div class="underline"></div>
             <div class="about-items">
                 <div class="about-item">
                     <div class="about-item-logo">
@@ -231,9 +230,10 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
-            <h2 class="team-title">Наша команда</h2>
+            <h2 class="title">Наша команда</h2>
+            <div class="underline"></div>
             <div class="team-people">
 
                 <div class="team-card-left">
@@ -292,6 +292,7 @@
             <div class="reviews-wrap">
                 <div class="reviews-left">
                     <div class="reviews-title">Наши клиенты говорят</div>
+                    <div class="underline underline-reviews"></div>
                     <div class="reviews-txt">Отзывы наших довольных клиентов помогают нам <br> достичь вершин</div>
                 </div>
                 <div class="reviews-right">
@@ -342,7 +343,7 @@
 
     <section id="connect" class="connect">
         <div class="container">
-            <h2 class="connect-title">Остались вопросы?</h2>
+            <h2 class="title">Остались вопросы?</h2>
             <div class="underline"></div>
             <div class="connect-description">Задайте их в форме ниже и наши специалисты свяжутся с Вами!</div>
 
@@ -398,51 +399,38 @@
         </div>
     </section>
     
-<!--    <footer class="footer" id="footer">-->
-<!--        <div class="container">-->
-<!--            <div class="footer-items">-->
-<!--                <div class="footer-item">-->
-<!--                    <div class="footer-logo">SakaAgency</div>-->
-<!--                    <div class="footer-txt">-->
-<!--                        Copyright © 2022 SakaAgency<br>-->
-<!--                        All Right Reserver-->
-<!--                    </div>-->
-<!--                    <div class="footer-media">-->
-<!--                        <a href="#" class="footer-media-link" target="_blank"><img src="img/instagram.png" alt="instagram" class="instagram"></a>-->
-<!--                        <a href="#" class="footer-media-link" target="_blank"><img src="img/twitter.png" alt="twitter" class="twitter"></a>-->
-<!--                        <a href="#" class="footer-media-link" target="_blank"><img src="img/youtube.png" alt="youtube" class="youtube"></a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="footer-item">-->
-<!--                    <div class="footer-header">Company</div>-->
-<!--                    <ul class="footer-list">-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">About Us</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">Project</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">Pricing</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">Career</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">Testimonial</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="footer-item">-->
-<!--                    <div class="footer-header">Support</div>-->
-<!--                    <ul class="footer-list">-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">FAQ</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">Privacy Policy</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">Term and Conditions</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">halo@sakaagency.studio</a></li>-->
-<!--                        <li class="footer-point"><a href="#" class="footer-link">022-123-4567</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="footer-item">-->
-<!--                    <div class="footer-header">Get In Touch</div>-->
-<!--                    <form action="" class="footer-subscribe">-->
-<!--                        <input type="email" name="email" id="" placeholder="Your email address" class="footer-email">-->
-<!--                        <input type="submit" value="Отправить" name="send" class="sendsubmit">-->
-<!--                    </form>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </footer>-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row footer-items">
+                <div class=" col-md-4 col-sm-0 footer-items-hidden">
+                    <div class="footer-item-left header-logo">
+                        <a href="#" class="header-logo-link">
+                            <img src="img/videograph.png" alt="videograph">
+                            <span>Пазюков && Comp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-md-4 g-col-sm">
+                    <div class="footer-item-middle">
+                        <p>&copy; 2022 г</p>
+                        <p><a class="privacy-link" href="privacy.html" target="_blank">Политика конфиденциальности</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm">
+                    <div class="footer-item-right">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="img/icons/phone.svg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <small>Есть вопросы? Звоните!</small>
+                            <p class="phone">8 843 249-00-64</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="up">
         <img src="img/icons/up-arrow.svg" alt="up">

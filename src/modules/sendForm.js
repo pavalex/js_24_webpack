@@ -4,6 +4,7 @@ import {maskPhone, validateData} from "./helpers";
 export const sendForm = (formId) => {
     const form = document.getElementById(formId);
     const formElements = form.querySelectorAll('input');
+    const textAreaElement = form.querySelector('.connect-message');
     const statusBlock = document.createElement('div');
     const loadText = 'Загрузка...';
     const errorText = 'Ошибка';
@@ -28,7 +29,6 @@ export const sendForm = (formId) => {
     };
 
     const sendData = (data) => {
-        console.log(data);
         const dataLoad = {
             "user_name": data[name="user_name"],
             "user_email": data[name="user_email"],
@@ -54,6 +54,7 @@ export const sendForm = (formId) => {
 
         statusBlock.textContent = loadText;
         statusBlock.style.color = '#fff';
+        statusBlock.style.textAlign = 'center';
         form.append(statusBlock);
 
         setTimeout(() => {
@@ -70,8 +71,12 @@ export const sendForm = (formId) => {
                     statusBlock.textContent = successText;
 
                     formElements.forEach(input => {
-                        input.value = ''
+                        input.value = '';
                     });
+
+                    if (data[name="user_message"] !== undefined && data[name="user_message"].length > 0) {
+                        textAreaElement.value = '';
+                    }
                 })
                 .catch(error => {
                     statusBlock.textContent = errorText;

@@ -6,10 +6,13 @@ export const swiper = () => {
         loop: true,
         modules: [Autoplay, Navigation],
         breakpoints: {
-            768: {
+            576: {
+                slidesPerView: 1
+            },
+            992: {
                 slidesPerView: 2
             },
-            1024: {
+            1200: {
                 slidesPerView: 3
             }
         },

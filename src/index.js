@@ -8,7 +8,7 @@ import {modal} from "./modules/modal";
 import {sendForm} from "./modules/sendForm";
 
 scroll();
-timer('20 june 2022');
+timer('25 june 2022');
 slider();
 menu();
 tabs();
